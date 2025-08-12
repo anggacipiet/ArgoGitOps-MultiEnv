@@ -12,6 +12,8 @@ spec:
       labels:
         app: demo-app
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: demo-app
         image: ghcr.io/anggacipiet/flask-app:latest
